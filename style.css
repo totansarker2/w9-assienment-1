@@ -6,12 +6,7 @@
     box-sizing: border-box;
 }
 
-/*
-font-family: 'Inter', sans-serif;
-font-family: 'Merriweather', serif;
-*/
-
-.bannar {
+.bannar, .all-catagories, .midnight, .join, .coming-soon , .holiday-sale{
     width: 85vw;
     margin: 3vw auto 0 auto;
     position: relative;
@@ -41,7 +36,7 @@ font-family: 'Merriweather', serif;
     z-index: 2;
 }
 
-.bannar::after{
+.bannar::after {
     position: absolute;
     content: "";
     background: linear-gradient(180deg, #070211, rgba(255, 255, 255, 0));
@@ -53,7 +48,245 @@ font-family: 'Merriweather', serif;
     border-radius: 16px;
 }
 
-.bannar div h1{
+.bannar div h1 {
     font-size: 4.5vw;
     font-weight: 900;
 }
+
+.all-catagories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    margin-top: 7vw;
+}
+
+.all-catagories h1 {
+    font-size: 5.5vw;
+    font-weight: 700;
+    color: #F00;
+}
+
+.all-catagories p {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #F00;
+    margin-top: 3vw;
+}
+
+.all-catagories span {
+    font-size: 3vw;
+    font-weight: 700;
+    color: #070211;
+    margin-top: 1vw;
+}
+
+.all-catagories img {
+    margin-top: 3vw;
+    width: 60%;
+}
+
+.midnight .background {
+    width: 100%;
+}
+
+.midnight .container {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 7vw; */
+    padding: 0 8%;
+    color: white;
+}
+
+.midnight .logo {
+    height: 80%;
+    display: block;
+}
+
+.midnight .container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+.midnight .container div h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 4vw;
+    letter-spacing: 0.45vw;
+    font-weight: 900;
+}
+
+.midnight .container div p {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: 1.7vw;
+}
+
+.midnight .container div span {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.midnight::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(90deg, #070211, rgba(255, 255, 255, 0));
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 16px;
+}
+
+.join{
+    background:linear-gradient(180deg, rgba(255, 0, 0, 0.10), rgba(255, 0, 0, 0.00));
+    font-family:  'Inter', sans-serif;
+    text-align: center;
+    padding: 6vw;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.join div{
+    font-size: 2vw;
+    font-weight: 600;
+    line-height: 3.5vw;
+}
+
+.join span{
+    color: #F00;
+}
+
+.join button{
+    font-size: 1.25vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #F00;
+    border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+    -webkit-border-radius:8px;
+    color: white;
+    padding: 1vw 2vw;
+    border: none;
+    margin-top: 3vw;
+}
+
+.coming-soon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 6vw;
+    font-family:  'Inter', sans-serif;
+}
+
+.coming-soon span{
+    color: #F00;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.coming-soon h2{
+    font-family: 'Merriweather', serif;
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+.coming-soon div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.coming-soon div p{
+    color: rgba(7, 2, 17, 0.60);
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 2vw;
+}
+
+.coming-soon .year{
+    font-family:  'Inter', sans-serif;
+    font-weight: 700;
+    color: #F00;
+}
+
+.coming-soon div .happynew{
+    max-width: 40%;
+}
+
+.coming-soon .radius{
+    border: 0.8vw solid #F00;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 1.7vw;
+}
+
+.coming-soon .radius img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.holiday-sale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+    color: #070211;
+    text-align: center;
+}
+
+.holiday-sale span{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.holiday-sale h1, .holiday-sale .red{
+    font-family: 'Merriweather', serif;
+    font-size: 4.5vw;
+    font-weight: 900;
+}
+
+.holiday-sale .red{
+    color: #F00;
+    text-transform: capitalize;
+}
+
+.holiday-sale p{
+    width: 60%;
+    color: rgba(7, 2, 17, 0.60);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25vw;
+    font-weight: 500;
+    line-height: 2vw;
+}
+
+
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Merriweather', serif;
+*/
