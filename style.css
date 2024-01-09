@@ -504,19 +504,10 @@ footer .container div .contact{
 }
 
 
-
-
-
-
-
-
-
-
-
 .discount .container{
     width: 100%;
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .discount .container .img1{
@@ -527,13 +518,13 @@ footer .container div .contact{
     height: 50%; */
     width: 100%;
     height: 100%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .discount div .celebration{
     width: 50%;
     height: auto;
-   border: 1px solid black;
+   /* border: 1px solid black; */
 }
 
 .discount .red-rect{
