@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.bannar, .all-catagories, .midnight, .join, .coming-soon , .holiday-sale, .portfolio, .subscribe, footer .container{
+.bannar, .all-catagories, .midnight, .join, .coming-soon , .holiday-sale, .portfolio, .subscribe, footer .container, .discount{
     width: 85%;
     margin: 3vw auto 0 auto;
     position: relative;
@@ -321,6 +321,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap:1.5vw;
     margin-top: 1vw;
+    /* z-index: -1;
+    position: relative; */
 }
 
 .portfolio .items img{
@@ -330,6 +332,28 @@
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    /* z-index: -1;
+    position: relative; */
+    /* display: block; */
+}
+
+.portfolio .items img::after{
+    content: "dfsadafsd64666465465afs";
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 0;
+    left: 0;
+    background-color: #F00;
+    z-index: 1;
+
+    border: 2px solid red;
+}
+
+.portfolio .items img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    border: 4px solid rgba(255, 0, 0, 0.608);
 }
 
 .subscribe{
@@ -448,6 +472,44 @@ footer .container div .contact{
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, 1fr);
     text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.discount .container{
+    width: 100%;
+    display: flex;
+    border: 1px solid red;
+}
+
+.discount .container .img1{
+    /* overflow: hidden; */
+    /* display: flex; */
+    /* display: inline; */
+    /* width: 180%;
+    height: 50%; */
+    width: 100%;
+    height: 100%;
+    border: 1px solid yellow;
+}
+
+.discount div .celebration{
+    width: 50%;
+    height: auto;
+   border: 1px solid black;
+}
+
+.discount .red-rect{
+    width: 100%;
 }
 
 /*
