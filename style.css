@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-.bannar, .all-catagories, .midnight, .join, .coming-soon , .holiday-sale, .portfolio, .subscribe{
-    width: 85vw;
+.bannar, .all-catagories, .midnight, .join, .coming-soon , .holiday-sale, .portfolio, .subscribe, footer .container{
+    width: 85%;
     margin: 3vw auto 0 auto;
     position: relative;
 }
@@ -408,7 +408,47 @@
     font-weight: 600;
 }
 
+footer{
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 2.5vw;
+    background-color:#070211;
+    color: #FFF;
+    padding: 1vw 0;
+}
 
+footer .container div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 0;
+}
+
+footer .container .icons img{
+    width: 5%;
+}
+
+footer .container .icons{
+    justify-content: center;
+    gap: 1vw;
+    border: 0.1px solid rgba(255, 255, 255, 0.092);
+}
+
+
+footer .container p img{
+   display: inline-block;
+   width: 2vw;
+}
+
+footer .container div .contact{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: right;
+}
 
 /*
 font-family: 'Inter', sans-serif;
