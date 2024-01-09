@@ -141,6 +141,19 @@
     font-size: 1.25vw;
     font-weight: 700;
     text-transform: uppercase;
+    width: fit-content;
+    padding: 1vw;
+    border: 2px solid rgba(255, 255, 255, 0.389);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+}
+
+.midnight .container div span:hover{
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .midnight::after {
@@ -191,7 +204,13 @@
     padding: 1vw 2vw;
     border: none;
     margin-top: 3vw;
+    cursor: pointer;
+    /* opacity: 0.8; */
 }
+
+/* .join button:hover{
+    background-color: rgb(255, 0, 0);
+} */
 
 .coming-soon{
     display: grid;
