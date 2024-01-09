@@ -358,6 +358,11 @@
     opacity: 0.8;
     cursor: pointer;
     border: 4px solid rgba(255, 0, 0, 0.608);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
 }
 
 .subscribe{
